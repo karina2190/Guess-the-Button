@@ -1,9 +1,9 @@
-var num = Math.floor(Math.random() * 3) + 1; 
-function pressedButton(id) {
-    if (num == id) {
+var winningButton = Math.floor(Math.random() * 3) + 1; 
+function loserOrWinner(pressedButton) {
+    if (winningButton == pressedButton) {
         alert('winner');
     } else {
         alert('loser');
     }
-    num = Math.floor(Math.random() * 3) + 1; 
+    winningButton = Math.floor(Math.random() * 3) + 1; 
 }
