@@ -1,9 +1,9 @@
 var winnerId = Math.floor(Math.random() * 3) + 1; 
 function loserOrWinner(pressedId) {
     if (winnerId == pressedId) {
-        alert('winner');
+        document.getElementById("winnerOrLoser").innerHTML = 'Winner';
     } else {
-        alert('loser');
+        document.getElementById("winnerOrLoser").innerHTML = 'Loser';
     }
     winnerId = Math.floor(Math.random() * 3) + 1; 
 }
